@@ -5,6 +5,7 @@
  */
 package guru.springframework.spring5webapp.model;
 
+import guru.springframework.spring5webapp.model.Author;
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Objects;
