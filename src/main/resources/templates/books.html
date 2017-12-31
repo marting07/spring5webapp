@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Spring Framework Guru</title>
+</head>
+<body>
+<h1>Book List</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Publisher</th>
+    </tr>
+    <tr th:each="book : ${books}">
+        <td th:text="${book.id}">123</td>
+        <td th:text="${book.title}">Spring in Action</td>
+        <td th:text="${book.publisher.name}">Wrox</td>
+    </tr>
+</table>
+
+</body>
+</html>
